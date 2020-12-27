@@ -1,0 +1,12 @@
+package Mahdi;
+
+public class VarJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1=10;
+		double result=num1/3;
+		System.out.println(result);
+	}
+
+}
