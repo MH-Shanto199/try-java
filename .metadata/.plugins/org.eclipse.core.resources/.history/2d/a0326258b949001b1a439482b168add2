@@ -2,26 +2,27 @@ package Mahdi;
 
 import java.util.Scanner;
 
-public class condition {
+public class switchStatment {
 	
 	static Scanner myScanner=new Scanner(System.in);
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		prln("what is your name :");
 		String myName=myScanner.nextLine();
 		int lnth=myName.length();
-		if(lnth<9) {
-			prln(myName+" This name is not a good name");
-		}else if(lnth>9) {
-			prln(myName+" This name is too long");
-		}else {
-			prln(myName+" You are a lucky person");
+		switch (lnth) {
+			case 9:
+				prln(myName+" You are soo lucky person");
+				break;
+			case 8:
+				prln(myName+" your name is too short");
+				break;
+			default:
+				prln(myName+" Thank you !!!");
+				break;
 		}
-		
 	}
-	
-	
 //	created method
 	static void prln(Object anyObject) {
 		System.out.println(anyObject);

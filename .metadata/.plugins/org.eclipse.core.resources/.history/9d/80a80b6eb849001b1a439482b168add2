@@ -16,7 +16,7 @@ public class condition {
 		}else if(lnth>9) {
 			prln(myName+" This name is too long");
 		}else {
-			prln(myName+" You are a lucky person");
+			prln(myName+" You are a lucky persion");
 		}
 		
 	}
