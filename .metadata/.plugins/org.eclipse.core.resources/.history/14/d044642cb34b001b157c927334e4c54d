@@ -1,0 +1,24 @@
+package Mahdi;
+
+public class arrayVal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] numberArry=new int[100];
+		int i=99;
+		while (i>0) {
+			numberArry[i]=i;
+			i--;
+		}
+		prln("index["+15+"] :"+numberArry[99]);
+	}
+	
+	
+	//	created method
+	static void prln(Object anyObject) {
+		System.out.println(anyObject);
+	}
+	static void pr(Object anyObject) {
+		System.out.print(anyObject);
+	}
+}
