@@ -1,0 +1,23 @@
+package oopmh;
+
+public class LearnObject {
+
+	static private CarClass ourCar;
+	static private  CarClass ourAnotherCar;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CarClass thirdCarClass=new CarClass("MAZDA", "Axela", "hfhf", 1500, 20);
+		
+		ourAnotherCar=new CarClass("Toyota", "Allion", "wasd", 1500, 30);
+		System.out.println("Manufacturer :"+ourAnotherCar.manufacturerName);
+		System.out.println("Model Name :"+ourAnotherCar.getModelNm());
+		System.out.println("Car Engine CC  :"+ourAnotherCar.engineCC);
+		System.out.println("Password Match :"+ourAnotherCar.matchPassword("asdfas"));
+		System.out.println("Amount of fuel  :"+ourAnotherCar.amountOfFuel()+"L");
+		ourAnotherCar.addfuel(2);
+		System.out.println("Amount of fuel after adding 2L :"+ourAnotherCar.amountOfFuel()+"L");
+		ourAnotherCar.runFsec(60);
+		System.out.println("Amount of fuel after Driving 60sec :"+ourAnotherCar.amountOfFuel()+"L");
+	}
+
+}

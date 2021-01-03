@@ -1,0 +1,16 @@
+package oopmh;
+
+public class LearnObject {
+
+	private int aNumber=12;
+	static private CarClass ourCar;
+	static private  CarClass ourAnotherCar;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ourAnotherCar=new CarClass("Toyota", "Allion", "wasd", 1500, 30);
+		System.out.println("Manufacturer :"+ourAnotherCar.manufacturerName);
+		System.out.println("Model Name :"+ourAnotherCar.getModelNm());
+		System.out.println("Password Match :"+ourAnotherCar.matchPassword("asdfas"));
+	}
+
+}
