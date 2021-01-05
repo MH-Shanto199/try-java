@@ -7,8 +7,15 @@ public class SubCarClass extends CarClass {
 	public SubCarClass() {
 		super();
 	}
+	
 	public  SubCarClass(String manu ,String model, String key, int CC, float fuel, float charge, String color) {
 		super(manu, model, key, CC, fuel);
+		chargeINB=charge;
+		this.color=color;
+	}
+	
+	public  SubCarClass(String manu ,String model, String key, int CC, float fuel,int manufacturerYear, float charge, String color) {
+		super(manu, model, key, CC, fuel, manufacturerYear);
 		chargeINB=charge;
 		this.color=color;
 	}
@@ -21,6 +28,12 @@ public class SubCarClass extends CarClass {
 	}
 	public String getColor() {
 		return color;
+	}
+	
+	public void printinfo() {
+		super.printinfo();
+		System.out.println("Charge in Battery :"+getChargeINB());
+		System.out.println("Color of Car :"+getColor());
 	}
 	
 }

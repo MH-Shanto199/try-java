@@ -1,0 +1,10 @@
+package moreObject;
+
+import oopmh.CarClass;
+
+public class AnotherSubCar extends CarClass {
+	public AnotherSubCar() {
+		// TODO Auto-generated constructor stub
+		super();
+	}
+}

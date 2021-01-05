@@ -1,0 +1,40 @@
+package moreObject;
+
+import oopmh.CarClass;
+
+public class AnotherSubCar extends CarClass implements CarInterFace {
+
+	public AnotherSubCar() {
+		// TODO Auto-generated constructor stub
+		super();
+	}
+
+	@Override
+	public void addAmmountOfFuel(int amount) {
+		// TODO Auto-generated method stub
+		addfuel(amount);
+	}
+	
+	@Override
+	public void driveCar(int drivInSec) {
+		// TODO Auto-generated method stub
+		runFsec(drivInSec);
+	}
+
+	
+	@Override
+	public int getMenuFYear() {
+		// TODO Auto-generated method stub
+		return manufacturerYear;
+	}
+
+	@Override
+	public String getCarModelName() {
+		// TODO Auto-generated method stub
+		return getModelNm();
+	}
+
+	
+
+	
+}

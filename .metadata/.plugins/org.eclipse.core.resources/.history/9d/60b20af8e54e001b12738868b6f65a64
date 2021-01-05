@@ -1,0 +1,13 @@
+package moreObject;
+
+import oopmh.*;
+
+public class Object2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SubCarClass aSubCar=new SubCarClass("NISSAN", "350z", "zsxc", 4000, 30, 2011, 12, "Red");
+		LearnObject.main(null);
+	}
+
+}

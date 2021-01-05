@@ -1,0 +1,7 @@
+package moreObject;
+
+public interface CarInterFace {
+	public void driveCar(int drivInSec);
+	public int getMenuFYear();
+	public String getCarModelName();
+}
