@@ -1,0 +1,9 @@
+package seventhLecture;
+
+public class OurThread extends Thread {
+	String threadName;
+	int startingPoint;
+	int counter;
+	int adder;
+	int timeDifference;
+}

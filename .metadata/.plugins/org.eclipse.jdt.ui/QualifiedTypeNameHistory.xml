@@ -2,13 +2,15 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="Mahdi.switchStatment"/>
     <fullyQualifiedTypeName name="javax.swing.tree.AbstractLayoutCache"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="oopmh.SubCarClass"/>
     <fullyQualifiedTypeName name="oopmh.LearnObject"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="oopmh.CarClass"/>
     <fullyQualifiedTypeName name="moreObject.CarInterFace"/>
     <fullyQualifiedTypeName name="java.lang.Float"/>
     <fullyQualifiedTypeName name="moreObject.AnotherSubCar"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="seventhLecture.OurThread"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

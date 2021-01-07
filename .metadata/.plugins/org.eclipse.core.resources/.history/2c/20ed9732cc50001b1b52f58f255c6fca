@@ -1,0 +1,10 @@
+package seventhLecture;
+
+public class Seventh {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		OurThread thread1=new OurThread("Child 1", 0, 1, 500, false)
+	}
+
+}
