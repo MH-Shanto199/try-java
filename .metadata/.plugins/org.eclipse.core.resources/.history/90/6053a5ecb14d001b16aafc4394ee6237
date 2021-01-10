@@ -1,5 +1,0 @@
-package oopmh;
-
-public class SubCarClass extends CarClass {
-
-}

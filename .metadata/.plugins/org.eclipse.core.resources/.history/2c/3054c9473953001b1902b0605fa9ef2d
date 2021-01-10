@@ -1,0 +1,12 @@
+package eightlecture;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		CustomRannableObject firstobject=new CustomRannableObject("FIRST", 0);
+		CustomRannableObject secondobject=new CustomRannableObject("SECOND", 200);
+		CustomRannableObject thirdobject=new CustomRannableObject("THIRD", 100000);
+		CustomRannableObject fourthobject=new CustomRannableObject("FOURTH", 5000);
+	}
+	
+}

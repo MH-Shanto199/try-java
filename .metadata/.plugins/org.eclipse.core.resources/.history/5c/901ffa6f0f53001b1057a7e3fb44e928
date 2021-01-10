@@ -1,0 +1,45 @@
+package eightlecture;
+
+public class CustomRannableObject implements Runnable {
+	
+	private String name;
+	private int counter;
+
+	
+	//---------------------------getter & setter--------------------//
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getCounter() {
+		return counter;
+	}
+
+	public void setCounter(int counter) {
+		this.counter = counter;
+	}
+
+	
+	
+	//---------------------runnable method------------------//
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while (!Thread.currentThread().isInterrupted()) {
+			
+			counter++;
+			
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

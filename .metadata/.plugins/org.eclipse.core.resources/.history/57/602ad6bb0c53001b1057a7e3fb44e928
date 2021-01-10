@@ -1,0 +1,18 @@
+package eightlecture;
+
+public class CustomRannableObject implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while (!Thread.currentThread().isInterrupted()) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

@@ -1,0 +1,52 @@
+package eightlecture;
+
+import java.util.Scanner;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		Scanner myScanner=new Scanner(System.in);
+		
+		CustomRannableObject firstobject=new CustomRannableObject("FIRST", 0);
+		CustomRannableObject secondobject=new CustomRannableObject("SECOND", 200);
+		CustomRannableObject thirdobject=new CustomRannableObject("THIRD", 100000);
+		CustomRannableObject fourthobject=new CustomRannableObject("FOURTH", 5000);
+		
+		Thread firsThread=new Thread(firstobject);
+		Thread secondThread=new Thread(secondobject);
+		Thread thirdThread=new Thread(thirdobject);
+		Thread fourThread=new Thread(fourthobject);
+		
+		firsThread.start();secondThread.start();thirdThread.start();fourThread.start();
+		
+		System.out.println("please write a command :");
+		String command=myScanner.nextLine();
+		
+		while (!command.toLowerCase().equals("exit")) {
+			if (command.equals("1")) {
+				System.out.println("Counter in Thread 1: "+firstobject.getCounter());
+			} else if (command.equals("2")) {
+				System.out.println("Counter in Thread 2: "+secondobject.getCounter());
+			}else if (command.equals("3")) {
+				System.out.println("Counter in Thread 3: "+thirdobject.getCounter());
+			}else if (command.equals("4")) {
+				System.out.println("Counter in Thread 4: "+fourthobject.getCounter());
+			}else if (command.equals("1s")) {
+				firsThread.interrupt();
+				System.out.println("Thread 1 is Stooped");
+			}else if (command.equals("2s")) {
+				secondThread.interrupt();
+				System.out.println("Thread 1 is Stooped");
+			}else if (command.equals("3s")) {
+				thirdThread.interrupt();
+				System.out.println("Thread 1 is Stooped");
+			}else if (command.equals("4s")) {
+				fourThread.interrupt();
+				System.out.println("Thread 1 is Stooped");
+			}
+			command=myScanner.nextLine();
+		}
+	}
+	
+}
