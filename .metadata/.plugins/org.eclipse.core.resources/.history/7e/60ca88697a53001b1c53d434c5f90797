@@ -1,0 +1,12 @@
+package filetester;
+
+import java.io.File;
+
+public class ReadWrite {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file=new File("C:\Users\MH SHANTO\OneDrive\Desktop\test_inp.txt");
+	}
+
+}
